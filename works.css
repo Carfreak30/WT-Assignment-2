@@ -1,0 +1,198 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid purple; */
+}
+
+/* CSS Variables */
+:root{
+    --navheight: 59px;
+}
+
+/* Nav k liye  */
+nav::before{
+    content: "";
+    background-color: bisque;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+/* nav ki logo  */
+#logo{
+    margin: 3px 25px;
+    
+}
+#logo img{
+    height: 100px;
+}
+
+/* Nav ki list  */
+nav{
+    position: sticky;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    text-align: center;
+    color: black;
+    list-style: none;
+    font-size: 1rem;
+}
+nav ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 1px 5px;
+}
+nav ul li a:hover{
+    color: rgb(198, 151, 95);
+    background-color: antiquewhite;
+}
+
+
+/* Contact me section  */
+#work::before{
+    content: "";
+    position: absolute;
+    background: url('workbg2.jpg') no-repeat center center/cover;
+    height: 1432px;
+    width: 100%;
+    z-index: -2;
+    top: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+#work h1{
+    text-align: center;
+}
+
+#work-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 30px;
+}
+
+.container p{
+    text-align: center;
+}
+
+.dabbe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* border: 2px solid purple; */
+    border-radius: 200px;
+    margin: 30px 50px;
+    height: 400px;
+    
+}
+
+/* .div{
+    color: antiquewhite;
+} */
+
+#song{
+    background: url('guitar.jpg') no-repeat center center/cover;
+    /* opacity: 0.7; */
+    color: white;
+    font-size: 2rem;
+}
+
+#art{
+    background: url('genshin.webp') no-repeat center center/cover;
+    /* opacity: 0.7; */
+    color: black;
+    font-size: 2rem;
+    
+}
+#website{
+    background: url('website.jpg') no-repeat center center/cover;
+    /* opacity: 0.7; */
+    color: black;
+}
+#website p, h1{
+    font-size: 2rem;
+}
+
+/* Utility classes  */
+.hprime{
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+#hobbyh{
+    text-align: center;
+    font-size: 2.8rem;
+}
+.hsecprime{
+    text-align: center;
+    font-size: 2.8 rem;
+    padding: 12px;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.anushka{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 73px;
+    margin-left: 50%;
+}
+
+.dayscontainer{
+    margin-top: 100px;
+}
+
+#reachmeh{
+    text-align: center;
+    margin: 5px;
+    height: 15px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/* ANIMATION */
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+body{
+    animation: transitionIn 0.75s;
+}

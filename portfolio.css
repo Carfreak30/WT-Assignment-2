@@ -1,0 +1,291 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid purple; */
+}
+
+/* CSS Variables */
+:root{
+    --navheight: 59px;
+}
+
+/* Nav k liye  */
+nav::before{
+    content: "";
+    background-color: bisque;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+nav{
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    margin: 0px;
+    top: 0px;
+    left: 0px;
+}
+
+/* nav ki logo  */
+#logo{
+    margin: 3px 25px;
+    
+}
+#logo img{
+    height: 100px;
+}
+
+/* Nav ki list  */
+nav{
+    position: sticky;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    text-align: center;
+    color: black;
+    list-style: none;
+    font-size: 1rem;
+}
+nav ul li a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 1px 5px;
+}
+nav ul li a:hover{
+    color: rgb(198, 151, 95);
+    background-color: antiquewhite;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 209px;
+}
+.btn{
+    border: 2px solid rgb(182, 163, 140);
+    background-color: rgb(248, 243, 237);
+    border-radius: 10px;
+    width: 25%;
+}
+
+#submitbtn{
+    border: 2px solid rgb(182, 163, 140);
+    background-color: rgb(248, 243, 237);
+    border-radius: 10px;
+    width: 25%;
+    height: 31px;
+    border-radius: 20px;
+}
+.btn:hover{
+    background-color: rgb(182, 163, 140);
+    color: antiquewhite;
+}
+#submitbtn:hover{
+    background-color: rgb(182, 163, 140);
+    color: antiquewhite;
+}
+#home::before{
+    content: "";
+    background: url('bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 402px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+}
+#home h1{
+    text-align: center;
+}
+#home p{
+    text-align: center;
+    padding: 10px 2px;
+}
+
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    margin: 5px 20px;
+    padding: 15px;
+    border: 2px solid rgb(182, 163, 140);
+    background-color: rgb(248, 243, 237);
+    border-radius: 10px;
+    width: 400px;
+}
+
+#zchan{
+    background-color: rgb(248, 243, 237);
+}
+
+#books{
+    /* background-image: url('books.jpg'); */
+    background-color: rgb(248, 243, 237);
+}
+
+#doodles{
+    /* background-image: url('doodles.jpg'); */
+    background-color: rgb(248, 243, 237);
+}
+
+
+/* Contact me section  */
+#contact::before{
+    content: "";
+    position: absolute;
+    background: url('leavesbg.jpg') no-repeat center center/cover;
+    height: 473px;
+    width: 100%;
+    z-index: -1;
+
+    opacity: 0.5;
+}
+
+#contact h1{
+    text-align: center;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#contact-box form{
+    width: 40%;
+}
+
+.form-group{
+    padding: 5px;
+}
+
+#contact-box label{
+    font-size: 1.1rem;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 2px solid rgb(182, 163, 140);
+}
+
+#buttonbox{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputbtn{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 20px;
+    border: 2px solid rgb(182, 163, 140);
+}
+
+
+/* Reach me section  */
+#socials2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socials1 img{
+    height: 36px;
+    padding: 10px;
+}
+#reachme::before{
+    content: "";
+    position: absolute;
+    background: url('seashells.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#reachme{
+    position: relative;
+}
+
+/* Utility classes  */
+.hprime{
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+#hobbyh{
+    text-align: center;
+    font-size: 2.8rem;
+}
+.hsecprime{
+    text-align: center;
+    font-size: 2.8 rem;
+    padding: 12px;
+}
+
+.textcenter{
+    text-align: center;
+}
+
+.anushka{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 73px;
+    margin-left: 50%;
+}
+
+.dayscontainer{
+    margin-top: 100px;
+}
+
+#reachmeh{
+    text-align: center;
+    margin: 5px;
+    height: 15px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+/* ANIMATION */
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+body{
+    animation: transitionIn 0.75s;
+}
